@@ -1,0 +1,17 @@
+C:\Users\Samur\source\repos\Blog\BusinessLayer\bin\Debug\net5.0\BusinessLayer.deps.json
+C:\Users\Samur\source\repos\Blog\BusinessLayer\bin\Debug\net5.0\BusinessLayer.dll
+C:\Users\Samur\source\repos\Blog\BusinessLayer\bin\Debug\net5.0\ref\BusinessLayer.dll
+C:\Users\Samur\source\repos\Blog\BusinessLayer\bin\Debug\net5.0\BusinessLayer.pdb
+C:\Users\Samur\source\repos\Blog\BusinessLayer\bin\Debug\net5.0\DataAccessLayer.dll
+C:\Users\Samur\source\repos\Blog\BusinessLayer\bin\Debug\net5.0\EntityLayer.dll
+C:\Users\Samur\source\repos\Blog\BusinessLayer\bin\Debug\net5.0\DataAccessLayer.pdb
+C:\Users\Samur\source\repos\Blog\BusinessLayer\bin\Debug\net5.0\EntityLayer.pdb
+C:\Users\Samur\source\repos\Blog\BusinessLayer\obj\Debug\net5.0\BusinessLayer.csprojAssemblyReference.cache
+C:\Users\Samur\source\repos\Blog\BusinessLayer\obj\Debug\net5.0\BusinessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Samur\source\repos\Blog\BusinessLayer\obj\Debug\net5.0\BusinessLayer.AssemblyInfoInputs.cache
+C:\Users\Samur\source\repos\Blog\BusinessLayer\obj\Debug\net5.0\BusinessLayer.AssemblyInfo.cs
+C:\Users\Samur\source\repos\Blog\BusinessLayer\obj\Debug\net5.0\BusinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\Samur\source\repos\Blog\BusinessLayer\obj\Debug\net5.0\BusinessLayer.csproj.CopyComplete
+C:\Users\Samur\source\repos\Blog\BusinessLayer\obj\Debug\net5.0\BusinessLayer.dll
+C:\Users\Samur\source\repos\Blog\BusinessLayer\obj\Debug\net5.0\ref\BusinessLayer.dll
+C:\Users\Samur\source\repos\Blog\BusinessLayer\obj\Debug\net5.0\BusinessLayer.pdb

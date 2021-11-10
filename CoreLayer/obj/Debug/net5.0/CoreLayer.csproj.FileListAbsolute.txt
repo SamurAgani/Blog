@@ -1,0 +1,12 @@
+C:\Users\Samur\source\repos\Blog\CoreLayer\bin\Debug\net5.0\CoreLayer.deps.json
+C:\Users\Samur\source\repos\Blog\CoreLayer\bin\Debug\net5.0\CoreLayer.dll
+C:\Users\Samur\source\repos\Blog\CoreLayer\bin\Debug\net5.0\ref\CoreLayer.dll
+C:\Users\Samur\source\repos\Blog\CoreLayer\bin\Debug\net5.0\CoreLayer.pdb
+C:\Users\Samur\source\repos\Blog\CoreLayer\obj\Debug\net5.0\CoreLayer.csprojAssemblyReference.cache
+C:\Users\Samur\source\repos\Blog\CoreLayer\obj\Debug\net5.0\CoreLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Samur\source\repos\Blog\CoreLayer\obj\Debug\net5.0\CoreLayer.AssemblyInfoInputs.cache
+C:\Users\Samur\source\repos\Blog\CoreLayer\obj\Debug\net5.0\CoreLayer.AssemblyInfo.cs
+C:\Users\Samur\source\repos\Blog\CoreLayer\obj\Debug\net5.0\CoreLayer.csproj.CoreCompileInputs.cache
+C:\Users\Samur\source\repos\Blog\CoreLayer\obj\Debug\net5.0\CoreLayer.dll
+C:\Users\Samur\source\repos\Blog\CoreLayer\obj\Debug\net5.0\ref\CoreLayer.dll
+C:\Users\Samur\source\repos\Blog\CoreLayer\obj\Debug\net5.0\CoreLayer.pdb
