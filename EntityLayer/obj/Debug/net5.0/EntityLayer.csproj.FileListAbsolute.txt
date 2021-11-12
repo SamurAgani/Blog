@@ -10,3 +10,15 @@ C:\Users\Samur\source\repos\Blog\EntityLayer\obj\Debug\net5.0\EntityLayer.csproj
 C:\Users\Samur\source\repos\Blog\EntityLayer\obj\Debug\net5.0\EntityLayer.dll
 C:\Users\Samur\source\repos\Blog\EntityLayer\obj\Debug\net5.0\ref\EntityLayer.dll
 C:\Users\Samur\source\repos\Blog\EntityLayer\obj\Debug\net5.0\EntityLayer.pdb
+C:\Users\Samur\OneDrive\Masaüstü\Blog\EntityLayer\bin\Debug\net5.0\EntityLayer.deps.json
+C:\Users\Samur\OneDrive\Masaüstü\Blog\EntityLayer\bin\Debug\net5.0\EntityLayer.dll
+C:\Users\Samur\OneDrive\Masaüstü\Blog\EntityLayer\bin\Debug\net5.0\ref\EntityLayer.dll
+C:\Users\Samur\OneDrive\Masaüstü\Blog\EntityLayer\bin\Debug\net5.0\EntityLayer.pdb
+C:\Users\Samur\OneDrive\Masaüstü\Blog\EntityLayer\obj\Debug\net5.0\EntityLayer.csprojAssemblyReference.cache
+C:\Users\Samur\OneDrive\Masaüstü\Blog\EntityLayer\obj\Debug\net5.0\EntityLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Samur\OneDrive\Masaüstü\Blog\EntityLayer\obj\Debug\net5.0\EntityLayer.AssemblyInfoInputs.cache
+C:\Users\Samur\OneDrive\Masaüstü\Blog\EntityLayer\obj\Debug\net5.0\EntityLayer.AssemblyInfo.cs
+C:\Users\Samur\OneDrive\Masaüstü\Blog\EntityLayer\obj\Debug\net5.0\EntityLayer.csproj.CoreCompileInputs.cache
+C:\Users\Samur\OneDrive\Masaüstü\Blog\EntityLayer\obj\Debug\net5.0\EntityLayer.dll
+C:\Users\Samur\OneDrive\Masaüstü\Blog\EntityLayer\obj\Debug\net5.0\ref\EntityLayer.dll
+C:\Users\Samur\OneDrive\Masaüstü\Blog\EntityLayer\obj\Debug\net5.0\EntityLayer.pdb

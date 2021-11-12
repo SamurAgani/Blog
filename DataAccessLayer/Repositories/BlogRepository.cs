@@ -45,5 +45,25 @@ namespace DataAccessLayer.Repositories
             Context.Update(Blog);
             Context.SaveChanges();
         }
+
+        public List<Blog> GetListAll()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Insert(Blog category)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Delete(Blog category)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Update(Blog category)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
