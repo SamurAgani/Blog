@@ -229,3 +229,8 @@ C:\Users\Samur\OneDrive\Masaüstü\Blog\Blog\obj\Debug\net5.0\Blog.Views.pdb
 C:\Users\Samur\OneDrive\Masaüstü\Blog\Blog\obj\Debug\net5.0\Blog.csproj.CopyComplete
 C:\Users\Samur\OneDrive\Masaüstü\Blog\Blog\obj\Debug\net5.0\Blog.genruntimeconfig.cache
 C:\Users\Samur\OneDrive\Masaüstü\Blog\Blog\obj\Debug\net5.0\Razor\Views\Category\Index.cshtml.g.cs
+C:\Users\Samur\OneDrive\Masaüstü\Blog\Blog\obj\Debug\net5.0\Razor\Views\Blog\Index.cshtml.g.cs
+C:\Users\Samur\OneDrive\Masaüstü\Blog\Blog\obj\Debug\net5.0\Razor\Views\Shared\UserLayout.cshtml.g.cs
+C:\Users\Samur\OneDrive\Masaüstü\Blog\Blog\obj\Debug\net5.0\Razor\Views\Shared\Partial1.cshtml.g.cs
+C:\Users\Samur\OneDrive\Masaüstü\Blog\Blog\obj\Debug\net5.0\Razor\Views\Shared\Partial2.cshtml.g.cs
+C:\Users\Samur\OneDrive\Masaüstü\Blog\Blog\obj\Debug\net5.0\Razor\Views\Shared\Partial3.cshtml.g.cs
