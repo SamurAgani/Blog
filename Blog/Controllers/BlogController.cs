@@ -20,6 +20,11 @@ namespace Blog.Controllers
           
             return View(blogs);
         }
+        public IActionResult BlogDetails(int Id)
+        {
+
+            return View();
+        }
     }
 }
 

@@ -38,6 +38,10 @@ namespace BusinessLayer.Concrete
             throw new NotImplementedException();
         }
 
+        public List<Blog> GetBlogById(int Id)
+        {
+            return blogDal.GetListAll(x => x.BlogID == Id);
+        }
         public List<Blog> GetList()
         {
             return blogDal.GetListAll();

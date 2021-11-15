@@ -392,3 +392,4 @@ C:\Users\AganiyevSN\Desktop\Blog\Blog\obj\Debug\net5.0\Blog.dll
 C:\Users\AganiyevSN\Desktop\Blog\Blog\obj\Debug\net5.0\ref\Blog.dll
 C:\Users\AganiyevSN\Desktop\Blog\Blog\obj\Debug\net5.0\Blog.pdb
 C:\Users\AganiyevSN\Desktop\Blog\Blog\obj\Debug\net5.0\Blog.genruntimeconfig.cache
+C:\Users\AganiyevSN\Desktop\Blog\Blog\obj\Debug\net5.0\Razor\Views\Blog\BlogDetails.cshtml.g.cs
