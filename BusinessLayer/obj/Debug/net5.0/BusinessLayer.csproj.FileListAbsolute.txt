@@ -48,4 +48,3 @@ C:\Users\AganiyevSN\Desktop\Blog\BusinessLayer\obj\Debug\net5.0\BusinessLayer.cs
 C:\Users\AganiyevSN\Desktop\Blog\BusinessLayer\obj\Debug\net5.0\BusinessLayer.dll
 C:\Users\AganiyevSN\Desktop\Blog\BusinessLayer\obj\Debug\net5.0\ref\BusinessLayer.dll
 C:\Users\AganiyevSN\Desktop\Blog\BusinessLayer\obj\Debug\net5.0\BusinessLayer.pdb
-C:\Users\AganiyevSN\Desktop\Blog\BusinessLayer\obj\Debug\net5.0\BusinessLayer.csproj.CopyComplete

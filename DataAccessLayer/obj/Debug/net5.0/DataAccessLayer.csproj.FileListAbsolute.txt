@@ -47,7 +47,6 @@ C:\Users\AganiyevSN\Desktop\Blog\DataAccessLayer\obj\Debug\net5.0\DataAccessLaye
 C:\Users\AganiyevSN\Desktop\Blog\DataAccessLayer\obj\Debug\net5.0\DataAccessLayer.AssemblyInfoInputs.cache
 C:\Users\AganiyevSN\Desktop\Blog\DataAccessLayer\obj\Debug\net5.0\DataAccessLayer.AssemblyInfo.cs
 C:\Users\AganiyevSN\Desktop\Blog\DataAccessLayer\obj\Debug\net5.0\DataAccessLayer.csproj.CoreCompileInputs.cache
-C:\Users\AganiyevSN\Desktop\Blog\DataAccessLayer\obj\Debug\net5.0\DataAccessLayer.csproj.CopyComplete
 C:\Users\AganiyevSN\Desktop\Blog\DataAccessLayer\obj\Debug\net5.0\DataAccessLayer.dll
 C:\Users\AganiyevSN\Desktop\Blog\DataAccessLayer\obj\Debug\net5.0\ref\DataAccessLayer.dll
 C:\Users\AganiyevSN\Desktop\Blog\DataAccessLayer\obj\Debug\net5.0\DataAccessLayer.pdb
