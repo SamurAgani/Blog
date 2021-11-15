@@ -22,7 +22,7 @@
                             <ul class="blog-icons my-4">
                                 <li>
                                     <a href="#">
-                                        <i class="far fa-calendar-alt"></i> @item.BlogCreateDate
+                                        <i class="far fa-calendar-alt"></i> @item.BlogCreateDate.ToString("dd/mm/yyyy")
                                     </a>
                                 </li>
                                 <li class="mx-2">
@@ -40,8 +40,8 @@
                             <h5 class="card-title">
                                 <a href="single.html">@item.BlogTitle</a>
                             </h5>
-                            <p class="card-text mb-3">@item.BlogContent</p>
-                            <a href="single.html" class="btn btn-primary read-m">Read More</a>
+                            <p class="card-text mb-3">@item.BlogContent?.Substring(0, (@item.BlogContent.Length/2)).LastIndexOf(" "))...</p>
+                            <a href="/Blog/BlogDetails/@item.BlogID/" class="btn btn-primary read-m">Read More</a>
                         </div>
                     </div>
                     <br />
