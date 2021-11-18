@@ -20,10 +20,10 @@ namespace Blog.Controllers
           
             return View(blogs);
         }
-        public IActionResult BlogDetails(int Id)
+        public IActionResult BlogReadAll(int Id)
         {
-
-            return View();
+            var values = bm.GetBlogById(Id);
+            return View(values);
         }
     }
 }

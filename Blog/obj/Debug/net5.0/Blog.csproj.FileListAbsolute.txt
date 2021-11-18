@@ -393,3 +393,6 @@ C:\Users\AganiyevSN\Desktop\Blog\Blog\obj\Debug\net5.0\ref\Blog.dll
 C:\Users\AganiyevSN\Desktop\Blog\Blog\obj\Debug\net5.0\Blog.pdb
 C:\Users\AganiyevSN\Desktop\Blog\Blog\obj\Debug\net5.0\Blog.genruntimeconfig.cache
 C:\Users\AganiyevSN\Desktop\Blog\Blog\obj\Debug\net5.0\Razor\Views\Blog\BlogDetails.cshtml.g.cs
+C:\Users\Samur\OneDrive\Masaüstü\Blog\Blog\obj\Debug\net5.0\Razor\Views\Blog\BlogReadAll.cshtml.g.cs
+C:\Users\Samur\OneDrive\Masaüstü\Blog\Blog\obj\Debug\net5.0\Razor\Views\Comment\PartialAddComment.cshtml.g.cs
+C:\Users\Samur\OneDrive\Masaüstü\Blog\Blog\obj\Debug\net5.0\Razor\Views\Comment\CommentListByBlog.cshtml.g.cs

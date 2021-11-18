@@ -15,9 +15,8 @@ namespace DataAccessLayer.EntityFramework
     {
         public List<Blog> GetListWithCategory()
         {
-            // using var c = new Context();
-            // return c.Blogs.Include(x=>x.Category).ToList();
-            return new List<Blog>();
+             using var c = new Context();
+             return c.Blogs.Include(x=>x.Category).ToList();
         }
     }
 }
