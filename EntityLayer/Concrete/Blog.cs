@@ -20,5 +20,8 @@ namespace EntityLayer.Concrete
         public int CategoryID { get; set; }
         virtual public Category Category { get; set; }
         virtual public List<Comment> Comments { get; set; }
+        public int? WriterID { get; set; }
+        virtual public Writer Writer { get; set; }
+
     }
 }
