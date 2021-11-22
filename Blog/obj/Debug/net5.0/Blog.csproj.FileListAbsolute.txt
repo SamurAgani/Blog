@@ -408,3 +408,5 @@ C:\Users\Samur\OneDrive\Masaüstü\Blog\Blog\obj\Debug\net5.0\Razor\Views\Login\
 C:\Users\Samur\OneDrive\Masaüstü\Blog\Blog\obj\Debug\net5.0\Razor\Views\Shared\Components\WriterLastBlog\Default.cshtml.g.cs
 C:\Users\Samur\OneDrive\Masaüstü\Blog\Blog\obj\Debug\net5.0\Razor\Views\NewsLetter\SubscribeMail.cshtml.g.cs
 C:\Users\Samur\OneDrive\Masaüstü\Blog\Blog\obj\Debug\net5.0\Razor\Views\ErrorPage\Error1.cshtml.g.cs
+C:\Users\Samur\OneDrive\Masaüstü\Blog\Blog\obj\Debug\net5.0\Razor\Views\About\Invoke.cshtml.g.cs
+C:\Users\Samur\OneDrive\Masaüstü\Blog\Blog\obj\Debug\net5.0\Razor\Views\About\SocialMediaAbout.cshtml.g.cs
