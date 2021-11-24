@@ -410,3 +410,7 @@ C:\Users\Samur\OneDrive\Masaüstü\Blog\Blog\obj\Debug\net5.0\Razor\Views\NewsLe
 C:\Users\Samur\OneDrive\Masaüstü\Blog\Blog\obj\Debug\net5.0\Razor\Views\ErrorPage\Error1.cshtml.g.cs
 C:\Users\Samur\OneDrive\Masaüstü\Blog\Blog\obj\Debug\net5.0\Razor\Views\About\Invoke.cshtml.g.cs
 C:\Users\Samur\OneDrive\Masaüstü\Blog\Blog\obj\Debug\net5.0\Razor\Views\About\SocialMediaAbout.cshtml.g.cs
+C:\Users\Samur\OneDrive\Masaüstü\Blog\Blog\obj\Debug\net5.0\Razor\Views\Contact\Index.cshtml.g.cs
+C:\Users\Samur\OneDrive\Masaüstü\Blog\Blog\obj\Debug\net5.0\Razor\Views\Writer\Index.cshtml.g.cs
+C:\Users\Samur\OneDrive\Masaüstü\Blog\Blog\obj\Debug\net5.0\Razor\Views\Writer\WriterProfile.cshtml.g.cs
+C:\Users\Samur\OneDrive\Masaüstü\Blog\Blog\obj\Debug\net5.0\Razor\Views\Writer\WriterMail.cshtml.g.cs
