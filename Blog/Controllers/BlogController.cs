@@ -1,6 +1,7 @@
 using Blog.Models;
 using BusinessLayer.Concrete;
 using DataAccessLayer.EntityFramework;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
@@ -11,6 +12,7 @@ using System.Threading.Tasks;
 
 namespace Blog.Controllers
 {
+    [AllowAnonymous]
     public class BlogController : Controller
     {
         BlogManeger bm = new BlogManeger(new EfBlogRepository());

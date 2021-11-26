@@ -47,6 +47,11 @@ namespace BusinessLayer.Concrete
             return blogDal.GetListAll();
         }
 
+        public List<Blog> GetLast3Blog()
+        {
+            return blogDal.GetListAll().Take(3).ToList();
+        }
+
         public void UpdateBlog(Blog blog)
         {
             throw new NotImplementedException();

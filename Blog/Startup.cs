@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -26,6 +27,8 @@ namespace Blog
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            //Bu olmamalidi  sadece silende islemirdi
+            services.AddSession();
 
             services.AddMvc(config=>
             {
@@ -34,6 +37,11 @@ namespace Blog
 
                 config.Filters.Add(new AuthorizeFilter(policy));
 
+            });
+            services.AddMvc();
+            services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie(x=>
+            {
+                x.LoginPath = "/Login/Index";
             });
         }
 
@@ -52,10 +60,10 @@ namespace Blog
             }
 
             app.UseStatusCodePagesWithReExecute("/ErrorPage/Error1","?code={0}");
-
+            app.UseAuthentication();
             app.UseHttpsRedirection();
             app.UseStaticFiles();
-
+            app.UseSession();
             app.UseRouting();
 
             app.UseAuthorization();
