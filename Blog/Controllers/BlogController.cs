@@ -28,6 +28,12 @@ namespace Blog.Controllers
             var values = bm.GetBlogById(Id);
             return View(values);
         }
+
+        public IActionResult BlogListByWriter()
+        {
+            var values=bm.GetBlogListByWriter(1);
+            return View(values);
+        }
     }
 
 }
