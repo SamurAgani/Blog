@@ -8,7 +8,11 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using EntityLayer.Concrete;
 using System.Threading.Tasks;
+using BusinessLayer.ValidationRules;
+using FluentValidation.Results;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace Blog.Controllers
 {
@@ -31,8 +35,43 @@ namespace Blog.Controllers
 
         public IActionResult BlogListByWriter()
         {
-            var values=bm.GetBlogListByWriter(1);
+            var values=bm.GetListWithCategoryByWriterBm(1);
             return View(values);
+        }
+
+        public IActionResult BlogAdd()
+        {
+            CategoryManager cm = new CategoryManager(new EfCategoryRepository());
+            List<SelectListItem> categoryValues = (from x in cm.GetList()
+                                                   select new SelectListItem
+                                                   {
+                                                       Text = x.CategoryName,
+                                                       Value = x.CategoryID.ToString()
+                                                   }).ToList();
+            ViewBag.cv = categoryValues;
+
+            return View();
+        }
+        [HttpPost]
+        public IActionResult BlogAdd(EntityLayer.Concrete.Blog p)
+        {
+            BlogValidator wv = new BlogValidator();
+
+            ValidationResult results = wv.Validate(p);
+
+            if (results.IsValid)
+            {
+                p.BlogStatus = true;
+                p.BlogCreateDate = DateTime.Parse(DateTime.Now.ToShortDateString());
+                p.WriterID = 1;
+                bm.Add(p);
+                return RedirectToAction("BlogListByWriter", "Blog");
+            }
+            foreach (var item in results.Errors)
+            {
+                ModelState.AddModelError(item.PropertyName, item.ErrorMessage);
+            }
+            return View();
         }
     }
 

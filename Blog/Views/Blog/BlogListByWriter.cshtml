@@ -19,8 +19,8 @@
         <tr>
             <td>@item.BlogID</td>
             <td>@item.BlogTitle</td>
-            <td>@item.BlogCreateDate</td>
-            <td>@item.CategoryID</td>
+            <td>@item.BlogCreateDate.ToString("dd/mm/yyyy")</td>
+            <td>@item.Category.CategoryName</td>
             <td>@item.BlogStatus</td>
             <td><a href="#" class="btn btn-danger">Delete</a></td>
             <td><a href="#" class="btn btn-warning">Update</a></td>
