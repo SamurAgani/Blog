@@ -1,15 +1,17 @@
 ﻿using BusinessLayer.Concrete;
 using DataAccessLayer.EntityFramework;
 using Microsoft.AspNetCore.Mvc;
-using System;
+using System.Linq;
+
 namespace Blog.ViewComponents
 {
-    public class CategoryList : ViewComponent
+    public class BlogListDashBoard : ViewComponent
     {
-        CategoryManager CM = new CategoryManager(new EfCategoryRepository());
+        BlogManeger bm = new BlogManeger(new EfBlogRepository());
+
         public IViewComponentResult Invoke()
         {
-            var values = CM.GetList();
+            var values = Enumerable.Reverse(bm.GetBlogListWithCategory()).Take(5).ToList();
             return View(values);
         }
     }
