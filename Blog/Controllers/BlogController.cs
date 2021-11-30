@@ -81,14 +81,25 @@ namespace Blog.Controllers
             return RedirectToAction("BlogListByWriter");
         }
 
-        public IActionResult EditBlog()
+        public IActionResult EditBlog(int Id)
         {
-            return View();
+            CategoryManager cm = new CategoryManager(new EfCategoryRepository());
+            List<SelectListItem> categoryValues = (from x in cm.GetList()
+                                                   select new SelectListItem
+                                                   {
+                                                       Text = x.CategoryName,
+                                                       Value = x.CategoryID.ToString()
+                                                   }).ToList();
+            ViewBag.cv = categoryValues;
+            var blog = bm.GetById(Id);
+            return View(blog);
         }
 
         [HttpPost]
         public IActionResult EditBlog(EntityLayer.Concrete.Blog p)
         {
+            p.WriterID = 1;
+            bm.Update(p);
             return RedirectToAction("BlogListByWriter");
         }
     }

@@ -423,3 +423,4 @@ C:\Users\Samur\OneDrive\Masaüstü\Blog\Blog\obj\Debug\net5.0\Razor\Views\Shared
 C:\Users\Samur\OneDrive\Masaüstü\Blog\Blog\obj\Debug\net5.0\Razor\Views\Shared\Components\WriterNatification\Default.cshtml.g.cs
 C:\Users\Samur\OneDrive\Masaüstü\Blog\Blog\obj\Debug\net5.0\Razor\Views\Blog\BlogListByWriter.cshtml.g.cs
 C:\Users\Samur\OneDrive\Masaüstü\Blog\Blog\obj\Debug\net5.0\Razor\Views\Blog\BlogAdd.cshtml.g.cs
+C:\Users\Samur\OneDrive\Masaüstü\Blog\Blog\obj\Debug\net5.0\Razor\Views\Blog\EditBlog.cshtml.g.cs

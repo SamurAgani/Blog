@@ -1,5 +1,6 @@
 ﻿using DataAccessLayer.Abstract;
 using DataAccessLayer.Concrete;
+using EntityLayer.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -42,8 +43,17 @@ namespace DataAccessLayer.Repositories
 
         public void Update(T t)
         {
-            Context.Update(t);
-            Context.SaveChanges();
+            if (t is Blog a)
+            {
+
+                var blog = Context.Blogs.FirstOrDefault(x => x.BlogID == a.BlogID);
+                blog.BlogContent = a.BlogContent;
+                blog.BlogImage = a.BlogImage;
+                blog.BlogThumbnailImage = a.BlogThumbnailImage;
+                blog.BlogTitle = a.BlogTitle;
+                blog.Category = a.Category;
+                Context.SaveChanges();
+            }
         }
 
 
