@@ -73,6 +73,24 @@ namespace Blog.Controllers
             }
             return View();
         }
+
+        public IActionResult DeleteBlog(int Id)
+        {
+            var bv = bm.GetById(Id);
+            bm.Delete(bv);
+            return RedirectToAction("BlogListByWriter");
+        }
+
+        public IActionResult EditBlog()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult EditBlog(EntityLayer.Concrete.Blog p)
+        {
+            return RedirectToAction("BlogListByWriter");
+        }
     }
 
 }

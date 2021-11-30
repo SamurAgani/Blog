@@ -29,7 +29,7 @@ namespace BusinessLayer.Concrete
         }
         public Blog GetById(int Id)
         {
-            return blogDal.GetListAll().FirstOrDefault(x => x.BlogID == Id);
+            return blogDal.GetById(Id);
         }
 
         public List<Blog> GetBlogById(int Id)
@@ -58,7 +58,7 @@ namespace BusinessLayer.Concrete
 
         public void Delete(Blog t)
         {
-            throw new NotImplementedException();
+            blogDal.Delete(t);
         }
 
         public void Update(Blog t)
