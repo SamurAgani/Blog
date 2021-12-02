@@ -37,7 +37,7 @@ namespace Blog.Controllers
             {
                 p.WriterStatus = "Active";
                 p.WriterAbout = "Test";
-                wm.WriterAdd(p);
+                wm.Add(p);
                 return RedirectToAction("Index", "Blog");
             }
             foreach (var item in results.Errors)
