@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿using BusinessLayer.Concrete;
+using DataAccessLayer.EntityFramework;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Blog.Controllers
@@ -6,6 +8,7 @@ namespace Blog.Controllers
     
     public class WriterController : Controller
     {
+        Writermaneger wm = new Writermaneger(new EfWriterRepository());
         public IActionResult Index()
         {
             return View();
@@ -34,6 +37,13 @@ namespace Blog.Controllers
         public PartialViewResult WriterFooterPartial()
         {
             return PartialView();
+        }
+
+        [AllowAnonymous]
+        public IActionResult WriterEditProfile()
+        {
+            var values = wm.GetById(1);
+            return View(values);
         }
     }
 }
