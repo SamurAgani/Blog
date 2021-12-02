@@ -1,5 +1,8 @@
 ﻿using BusinessLayer.Concrete;
+using BusinessLayer.ValidationRules;
 using DataAccessLayer.EntityFramework;
+using EntityLayer.Concrete;
+using FluentValidation.Results;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -44,6 +47,26 @@ namespace Blog.Controllers
         {
             var values = wm.GetById(1);
             return View(values);
+        }
+        [HttpPost]
+        [AllowAnonymous]
+        public IActionResult WriterEditProfile(Writer p)
+        {
+            WriterValidator wv = new WriterValidator();
+            ValidationResult vr = wv.Validate(p);
+            if (vr.IsValid)
+            {
+                wm.Update(p);
+                return RedirectToAction("Index", "Dashboard");
+            }
+            else
+            {
+                foreach (var item in vr.Errors)
+                {
+                    ModelState.AddModelError(item.PropertyName, item.ErrorMessage);
+                }
+            }
+            return View();
         }
     }
 }

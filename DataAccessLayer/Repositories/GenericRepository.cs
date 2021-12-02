@@ -54,6 +54,15 @@ namespace DataAccessLayer.Repositories
                 blog.Category = a.Category;
                 Context.SaveChanges();
             }
+            if (t is Writer writer)
+            {
+
+                var writerEdit = Context.Writers.FirstOrDefault(x => x.WriterID == writer.WriterID);
+                writerEdit.WriterName = writer.WriterName;
+                writerEdit.WriterPassword = writer.WriterPassword;
+                writerEdit.WriterAbout = writer.WriterAbout;
+                Context.SaveChanges();
+            }
         }
 
 
