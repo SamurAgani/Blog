@@ -61,6 +61,10 @@ namespace DataAccessLayer.Repositories
                 writerEdit.WriterName = writer.WriterName;
                 writerEdit.WriterPassword = writer.WriterPassword;
                 writerEdit.WriterAbout = writer.WriterAbout;
+                if (writer.WriterImage != null)
+                {
+                    writerEdit.WriterImage = writer.WriterImage;
+                }
                 Context.SaveChanges();
             }
         }
