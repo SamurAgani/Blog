@@ -8,8 +8,8 @@ namespace Blog.ViewComponents
         MessageManager mm = new MessageManager(new EfMessageRepository());
         public IViewComponentResult Invoke()
         {
-            string p = "test@gmail.com";
-            var values = mm.GetInboxListByWriter(p);
+            int id = 1;
+            var values = mm.GetInboxListByWriter(id);
             return View(values);
         }
     }
