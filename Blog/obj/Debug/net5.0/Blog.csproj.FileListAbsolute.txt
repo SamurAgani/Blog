@@ -433,3 +433,6 @@ C:\Users\Samur\OneDrive\Masaüstü\Blog\Blog\obj\Debug\net5.0\Razor\Views\Writer
 C:\Users\Samur\OneDrive\Masaüstü\Blog\Blog\obj\Debug\net5.0\Razor\Views\Natification\AllNatifation.cshtml.g.cs
 C:\Users\Samur\OneDrive\Masaüstü\Blog\Blog\obj\Debug\net5.0\Razor\Views\Message\InBox.cshtml.g.cs
 C:\Users\Samur\OneDrive\Masaüstü\Blog\Blog\obj\Debug\net5.0\Razor\Views\Message\MessageDetails.cshtml.g.cs
+C:\Users\Samur\OneDrive\Masaüstü\Blog\Blog\obj\Debug\net5.0\Razor\Views\Shared\AdminLayout.cshtml.g.cs
+C:\Users\Samur\OneDrive\Masaüstü\Blog\Blog\obj\Debug\net5.0\Razor\Views\Admin\Index.cshtml.g.cs
+C:\Users\Samur\OneDrive\Masaüstü\Blog\Blog\obj\Debug\net5.0\Razor\Views\Admin\AdminNavbarPartial.cshtml.g.cs
