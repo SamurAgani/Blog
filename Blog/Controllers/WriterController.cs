@@ -1,6 +1,7 @@
 ﻿using Blog.Models;
 using BusinessLayer.Concrete;
 using BusinessLayer.ValidationRules;
+using DataAccessLayer.Concrete;
 using DataAccessLayer.EntityFramework;
 using EntityLayer.Concrete;
 using FluentValidation.Results;
@@ -8,15 +9,22 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.IO;
+using System.Linq;
 
 namespace Blog.Controllers
 {
-    
+
     public class WriterController : Controller
     {
         Writermaneger wm = new Writermaneger(new EfWriterRepository());
+        [Authorize]
         public IActionResult Index()
         {
+            var usermail = User.Identity.Name;
+            ViewBag.v = usermail;
+            Context c = new Context();
+            var writername = c.Writers.Where(x=>x.WriterMail == usermail).Select(y=>y.WriterName).FirstOrDefault();
+            ViewBag.v2 = writername;
             return View();
         }
         public IActionResult WriterProfile()
@@ -45,14 +53,15 @@ namespace Blog.Controllers
             return PartialView();
         }
 
-        [AllowAnonymous]
         public IActionResult WriterEditProfile()
         {
-            var values = wm.GetById(1);
+            Context c = new Context();
+            var usermail = User.Identity.Name;
+            var writerId = c.Writers.Where(x => x.WriterMail == usermail).Select(y => y.WriterID).FirstOrDefault();            
+            var values = wm.GetById(writerId);
             return View(values);
         }
         [HttpPost]
-        [AllowAnonymous]
         public IActionResult WriterEditProfile(Writer p)
         {
             WriterValidator wv = new WriterValidator();

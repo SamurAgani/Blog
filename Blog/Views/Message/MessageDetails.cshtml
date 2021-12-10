@@ -1,0 +1,15 @@
+﻿@model EntityLayer.Concrete.Message2
+@{
+    ViewData["Title"] = "MessageDetails";
+    Layout = "~/Views/Shared/WriterLayout.cshtml";
+}
+@Html.Label("Message Id")
+@Html.TextBoxFor(x => x.MessageId, new { @class = "form-control" })
+<br />
+@Html.Label("Message Title")
+@Html.TextBoxFor(x => x.Subject, new { @class = "form-control" })
+<br />
+@Html.Label("Message")
+@Html.TextAreaFor(x => x.MessageDetails,23,3, new { @class = "form-control" })
+<br />
+<button asp-action="InBox" asp-controller="Message" class="btn btn-success">GoBack</button>

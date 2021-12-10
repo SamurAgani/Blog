@@ -10,7 +10,6 @@ namespace Blog.Controllers
     public class DashboardController : Controller
     {
         BlogManeger bm = new BlogManeger(new EfBlogRepository());
-        [AllowAnonymous]
         public IActionResult Index()
         {
             Context c = new Context();
