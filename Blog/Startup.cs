@@ -30,7 +30,7 @@ namespace Blog
             //Bu olmamalidi  sadece silende islemirdi
             services.AddSession();
 
-            services.AddMvc(config=>
+            services.AddMvc(config =>
             {
                 var policy = new AuthorizationPolicyBuilder().RequireAuthenticatedUser()
                     .Build();
@@ -39,7 +39,7 @@ namespace Blog
 
             });
             services.AddMvc();
-            services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie(x=>
+            services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie(x =>
             {
                 x.LoginPath = "/Login/Index";
             });
@@ -59,7 +59,7 @@ namespace Blog
                 app.UseHsts();
             }
 
-            app.UseStatusCodePagesWithReExecute("/ErrorPage/Error1","?code={0}");
+            app.UseStatusCodePagesWithReExecute("/ErrorPage/Error1", "?code={0}");
             app.UseAuthentication();
             app.UseHttpsRedirection();
             app.UseStaticFiles();
@@ -71,8 +71,14 @@ namespace Blog
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
+                            name: "areas",
+                            pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
+
+                endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
+
+                
             });
         }
     }
