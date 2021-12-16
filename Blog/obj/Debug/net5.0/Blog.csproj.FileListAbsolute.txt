@@ -441,3 +441,13 @@ C:\Users\Samur\OneDrive\Masaüstü\Blog\Blog\bin\Debug\net5.0\JetBrains.Annotati
 C:\Users\Samur\OneDrive\Masaüstü\Blog\Blog\bin\Debug\net5.0\X.PagedList.dll
 C:\Users\Samur\OneDrive\Masaüstü\Blog\Blog\bin\Debug\net5.0\X.PagedList.Mvc.Core.dll
 C:\Users\Samur\OneDrive\Masaüstü\Blog\Blog\obj\Debug\net5.0\Razor\Areas\Admin\Views\Category\Addcategory.cshtml.g.cs
+C:\Users\Samur\OneDrive\Masaüstü\Blog\Blog\bin\Debug\net5.0\ClosedXML.dll
+C:\Users\Samur\OneDrive\Masaüstü\Blog\Blog\bin\Debug\net5.0\DocumentFormat.OpenXml.dll
+C:\Users\Samur\OneDrive\Masaüstü\Blog\Blog\bin\Debug\net5.0\ExcelNumberFormat.dll
+C:\Users\Samur\OneDrive\Masaüstü\Blog\Blog\bin\Debug\net5.0\System.IO.Packaging.dll
+C:\Users\Samur\OneDrive\Masaüstü\Blog\Blog\obj\Debug\net5.0\Razor\Areas\Admin\Views\Blog\BlogListExcel.cshtml.g.cs
+C:\Users\Samur\OneDrive\Masaüstü\Blog\Blog\obj\Debug\net5.0\Razor\Areas\Admin\Views\Blog\BlogTitleListExcel.cshtml.g.cs
+C:\Users\Samur\OneDrive\Masaüstü\Blog\Blog\obj\Debug\net5.0\Razor\Areas\Admin\Views\Widget\Index.cshtml.g.cs
+C:\Users\Samur\OneDrive\Masaüstü\Blog\Blog\obj\Debug\net5.0\Razor\Areas\Admin\Views\Shared\Components\Statistic1\Default.cshtml.g.cs
+C:\Users\Samur\OneDrive\Masaüstü\Blog\Blog\obj\Debug\net5.0\Razor\Areas\Admin\Views\Shared\Components\Statistic2\Default.cshtml.g.cs
+C:\Users\Samur\OneDrive\Masaüstü\Blog\Blog\obj\Debug\net5.0\Razor\Areas\Admin\Views\Shared\Components\Statistic4\Default.cshtml.g.cs

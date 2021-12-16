@@ -13,7 +13,7 @@ namespace Blog.Areas.Admin.Controllers
         CategoryManager cm = new CategoryManager(new EfCategoryRepository());
         public IActionResult Index(int page = 1)
         {
-            var values = cm.GetList().ToPagedList(page,3);
+            var values = cm.GetList().ToPagedList(page, 3);
             return View(values);
         }
         public IActionResult Addcategory()
@@ -39,6 +39,12 @@ namespace Blog.Areas.Admin.Controllers
                 ModelState.AddModelError(item.PropertyName, item.ErrorMessage);
             }
             return View();
+        }
+        public IActionResult CategoryDelete(int Id)
+        {
+            var bv = cm.GetById(Id);
+            cm.Delete(bv);
+            return RedirectToAction("Index");
         }
     }
 }

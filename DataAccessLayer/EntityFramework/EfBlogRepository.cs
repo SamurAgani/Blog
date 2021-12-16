@@ -15,14 +15,12 @@ namespace DataAccessLayer.EntityFramework
     {
         public List<Blog> GetListWithCategory()
         {
-             using var c = new Context();
-             return c.Blogs.Include(x=>x.Category).ToList();
+            throw new NotImplementedException();
         }
 
         public List<Blog> GetListWithCategoryByWriter(int id)
         {
-            using var c = new Context();
-            return c.Blogs.Include(x => x.Category).Where(x=>x.WriterID==id).ToList();
+            throw new NotImplementedException();
         }
     }
 }
