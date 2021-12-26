@@ -5,6 +5,5 @@
         public int Id { get; set; }
         public string BlogName { get; set; }
     }
-
 }
 
