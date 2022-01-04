@@ -1,0 +1,65 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+<button type="button" id="btngetList" class="btn btn-outline-primary">
+    Writer List
+</button>
+<button type="button" id="btngetById" class="btn btn-outline-primary">
+    GetById
+</button>
+<br/>
+<br/>
+<div id="writerlist">
+
+</div>
+<br />
+<div id="writerGet">
+
+</div>
+<br />
+<div class="">
+    <input type="text" id="WriterId" placeholder="Writer id" class="form-control"/>
+</div>
+
+@section scripts{
+    <script>
+        $("#btngetList").click(function () {
+            $.ajax({
+                contentType: "application/json",
+                dataType: "json",
+                type: "get",
+                url: "/Admin/Writer/WriterList/",
+                success: function (func) {
+                    let w = jQuery.parseJSON(func);
+                    console.log(func);
+                    let tableHtml = "<table class=table table-bordered> <tr><th>WriterId</th> <th>Name</th></tr>";
+
+                    $.each(w, (index, value) => {
+                        tableHtml += `<tr><td>${value.Id}</td><td>${value.Name}</td></tr>`;
+                    });
+
+                    tableHtml += "</table>"
+                    $("#writerlist").html(tableHtml);
+                }
+            });
+        });
+
+        $("btngetById").click(x => {
+            let id = $("#WriterId").val();
+            $.ajax({
+                contentType: "application/json",
+                dataType: "json",
+                type: "get",
+                url: "/Admin/Writer/GetWriterById/",
+                data: { WriterId: id },
+                success: function (func1) {
+                    console.log(id);
+                    let w = jQuery.parseJSON(func1);
+                }
+            });
+        });
+    </script>
+ }
