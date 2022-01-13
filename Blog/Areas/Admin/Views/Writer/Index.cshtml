@@ -10,8 +10,17 @@
 <button type="button" id="btngetById" class="btn btn-outline-primary">
     GetById
 </button>
-<br/>
-<br/>
+<button type="button" id="btnaddwriter" class="btn btn-outline-primary">
+    AddWriter
+</button>
+<button type="button" id="btnupdatewriter" class="btn btn-outline-danger">
+    Update
+</button>
+<button type="button" id="btndeletewriter" class="btn btn-outline-danger">
+    Delete
+</button>
+<br />
+<br />
 <div id="writerlist">
 
 </div>
@@ -21,11 +30,28 @@
 </div>
 <br />
 <div class="">
-    <input type="text" id="WriterId" placeholder="Writer id" class="form-control"/>
+    <input type="text" id="WriterId" placeholder="Writer id" class="form-control" />
+</div>
+
+<br />
+<div>
+    <input type="text" class="form-control" id="txtWriterid" placeholder="Writer Id" />
+    <input type="text" class="form-control" id="txtWritername" placeholder="Writer Name" />
+</div>
+<br />
+<div>
+    <input type="text" id="txtId" placeholder="Delete Writer id" class="form-control" />
+</div>
+<br />
+<div>
+    <input type="text" id="txtId1" placeholder="Updateed Writer id" class="form-control" />
+    <input type="text" id="txtName1" placeholder="Updateed Writer name" class="form-control" />
 </div>
 
 @section scripts{
     <script>
+        const { write } = require("fs");
+
         $("#btngetList").click(function () {
             $.ajax({
                 contentType: "application/json",
@@ -47,7 +73,7 @@
             });
         });
 
-        $("btngetById").click(x => {
+        $("#btngetById").click(x => {
             let id = $("#WriterId").val();
             $.ajax({
                 contentType: "application/json",
@@ -58,8 +84,58 @@
                 success: function (func1) {
                     console.log(id);
                     let w = jQuery.parseJSON(func1);
+                    let getvalue = `<table class=table table-bordered><tr><th>Writer ID<th>
+                                                    <th>Name</th></tr> <tr><td>${w.id}</td><td>${w.Name}</td></tr></table>`;
+                    $("#writerGet").html(getvalue);
                 }
             });
         });
+
+        $("#btnaddwriter").click(function () {
+            let writer = {
+                Id: $("#txtWriterid").val(),
+                Name: $("txtWritername").val()
+            };
+            $.ajax({
+                type: "post",
+                url: "/Admin/Writer/AddWriter/",
+                data: writer,
+                success: function (func) {
+                    let result = jQuery.parseJSON(func);
+                    alert("Success");
+                }
+            })
+        });
+
+        $("#btndeletewriter").click(x => {
+            let id = $("#txtId").val();
+
+            $.ajax({
+                url: "/Admin/Writer/DeleteWriter/" + id,
+                dataType: "json",
+                type: "post",
+                success: function (func) {
+                    let result = jQuery.parseJSON(func);
+                    alert("Success");
+                }
+            });
+        });
+
+        $("#btnupdatewriter").click(func => {
+            let writer = {
+                Id: $("#txtId1").val(),
+                Name: $("#txtName1").val()
+            };
+            $.ajax({
+                type: "post",
+                url: "/Admin/Writer/UpdateWriter/",
+                data: writer,
+                success: function (func) {
+                    let result = jQuery.parseJSON(func);
+                    alert("Success");
+                }
+            });
+        });
+
     </script>
- }
+}
